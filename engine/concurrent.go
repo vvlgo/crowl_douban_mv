@@ -44,14 +44,6 @@ func (e *ConcurrentEngine) Run(seeds []string) {
 
 		result := <-out
 		fmt.Println(len(result))
-		//for _, v := range result {
-		//	fmt.Printf("url :%s\n", v)
-		//	//content, _ := fetcher.Fetch(v)
-		//	//fetcher.GetMovie(string(content))
-		//}
-		//go func() {
-		//	e2.RunMv(result)
-		//}()
 		ress = append(ress,result...)
 		if len(ress)>=(e.Total-5*20){
 			break

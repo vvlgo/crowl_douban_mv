@@ -9,8 +9,8 @@ import (
 const ProxyServer = "http-dyn.abuyun.com:9020"
 
 // 代理隧道验证信息
-const proxyUser  = "H95U90Q7D305591D";
-const proxyPass  = "8196DAA70C04C390";
+const proxyUser  = "XXXXXXXXX";
+const proxyPass  = "XXXXXXXXX";
 
 
 type AbuyunProxy struct {

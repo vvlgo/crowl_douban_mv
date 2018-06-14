@@ -10,7 +10,7 @@ import (
 var (
 	db orm.Ormer
 )
-
+//豆瓣信息结构体，及对应字段解析方法
 type MovieInfo struct{
 	Id int64
 	Movie_id int64
@@ -29,7 +29,7 @@ type MovieInfo struct{
 
 func init() {
 	orm.Debug = true // 是否开启调试模式 调试模式下会打印出sql语句
-	orm.RegisterDataBase("default", "mysql", "root:root@tcp(127.0.0.1:3306)/douban_mv?charset=utf8", 30)
+	orm.RegisterDataBase("default", "mysql", "root:29571935@tcp(127.0.0.1:3306)/douban_mv?charset=utf8", 30)
 	orm.RegisterModel(new(MovieInfo))
 	db = orm.NewOrm()
 }
@@ -46,6 +46,7 @@ func GetMovieDirector(movieHtml string) string{
 	if movieHtml == ""{
 		return ""
 	}
+
 
 
 	reg := regexp.MustCompile(`<a.*?rel="v:directedBy">(.*?)</a>`)

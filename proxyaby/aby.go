@@ -11,8 +11,7 @@ const ProxyServer = "http-dyn.abuyun.com:9020"
 // 代理隧道验证信息
 const proxyUser  = "XXXXXXXXX";
 const proxyPass  = "XXXXXXXXX";
-
-
+//测试
 type AbuyunProxy struct {
 	AppID string
 	AppSecret string

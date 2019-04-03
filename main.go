@@ -10,7 +10,9 @@ import (
 
 var mvContent = make(chan string)
 var mvUrl= make(chan string)
-
+/*
+文件测试
+*/
 func main() {
 	var i=0
 	var n=0
